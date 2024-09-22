@@ -1,7 +1,7 @@
 // Sting, number, undefined, null, boolean
-const nome = 'Luiz'; // String
-const nome1 = `Luiz`; // String
-const nome2 = "Luiz"; // String
+const nome = 'ValDimar'; // String
+const nome1 = `Valdumar`; // String
+const nome2 = "Valdemar"; // String
 const num1 = 10; // Number
 const num2 = 10.52; // Number
 let nomeAluno; // undefined = não aponta pra local nenhum na memória
