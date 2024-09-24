@@ -18,6 +18,7 @@ class ValidaCPF {
         const digito1 = this.geraDigito(cpfSemDigitos)
         const digito2 = this.geraDigito(cpfSemDigitos + digito1);
         this.novoCPF = cpfSemDigitos + digito1 + digito2;
+        console.log()
     }
 
     geraDigito(cpfSemDigitos) {
