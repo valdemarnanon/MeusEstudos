@@ -32,7 +32,7 @@ esperaAi('Conexão com BD', rand(1, 3))
         console.log('Erro: ', e);
     });
 
-console.log('Isso aqui será exibido antes de qualquer uma')
+console.log('Isso aqui será exibido antes de qualquer uma');
 
 
 
