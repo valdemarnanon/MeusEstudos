@@ -39,6 +39,13 @@ async function executa() {
 }
 executa();
 
+/*
+    pending - pendente
+    Fullfilled -> resolvida
+    rejected -> rejeitada
+*/
+
+
 // esperaAi('Fase 1', rand(0, 3))
 //     .then(valor => {
 //         console.log(valor);
