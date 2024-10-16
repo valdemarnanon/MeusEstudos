@@ -10,11 +10,12 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   Pessoa: () => (/* binding */ Pessoa),
+/* harmony export */   "default": () => (/* binding */ Pessoa),
 /* harmony export */   idade: () => (/* binding */ idade),
 /* harmony export */   nome: () => (/* binding */ nome),
 /* harmony export */   sobrenome: () => (/* binding */ sobrenome),
-/* harmony export */   soma: () => (/* binding */ soma)
+/* harmony export */   soma: () => (/* binding */ soma),
+/* harmony export */   veses: () => (/* binding */ veses)
 /* harmony export */ });
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
@@ -25,6 +26,9 @@ function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Can
 var nome = 'Valdemar';
 var sobrenome = 'Nanon';
 var idade = 21;
+var veses = function veses(x, y) {
+  return x * y;
+};
 function soma(x, y) {
   return x + y;
 }
@@ -33,6 +37,8 @@ var Pessoa = /*#__PURE__*/_createClass(function Pessoa(nome, sobrenome) {
   this.nome = nome;
   this.sobrenome = sobrenome;
 });
+
+
 
 // const nome = 'Valdemar';
 // const sobrenome = 'Nanon';
@@ -111,10 +117,16 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modulo1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulo1 */ "./src/modulo1.js");
 
-var p1 = new _modulo1__WEBPACK_IMPORTED_MODULE_0__.Pessoa(_modulo1__WEBPACK_IMPORTED_MODULE_0__.nome, _modulo1__WEBPACK_IMPORTED_MODULE_0__.sobrenome);
-console.log(p1);
+console.log((0,_modulo1__WEBPACK_IMPORTED_MODULE_0__.veses)(20, 40));
+console.log(new _modulo1__WEBPACK_IMPORTED_MODULE_0__["default"](_modulo1__WEBPACK_IMPORTED_MODULE_0__.nome, _modulo1__WEBPACK_IMPORTED_MODULE_0__.sobrenome));
+console.log((0,_modulo1__WEBPACK_IMPORTED_MODULE_0__.soma)(_modulo1__WEBPACK_IMPORTED_MODULE_0__.idade, 10));
 
-// import { nome2, sobrenome, idade, soma as gordaoXT } from './modulo1';
+// import { nome, sobrenome, idade, soma, Pessoa } from './modulo1';
+
+// const p1 = new Pessoa(nome, sobrenome);
+// console.log(p1)
+
+// import { nome as nome2, sobrenome, idade, soma as gordaoXT } from './modulo1';
 
 // console.log(nome2, sobrenome, idade);
 // console.log(gordaoXT(20, 30));
