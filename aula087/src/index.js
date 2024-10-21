@@ -1,4 +1,5 @@
-import Pessoa, { nome, sobrenome, idade, soma, veses} from './modulo1' 
+import Pessoa, { nome, sobrenome, idade, soma, veses} from './modulo1'
+
 console.log(veses(20, 40));
 console.log(new Pessoa(nome, sobrenome));
 console.log(soma(idade, 10));
